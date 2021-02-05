@@ -6,8 +6,14 @@ public class Student {
 
     private List<Double> grades;
 
+    //constructor
     public Student(List<Double> grades){
         this.grades = grades;
+    }
+
+    // getters
+    public List<Double> getGrades() {
+        return grades;
     }
 
 
