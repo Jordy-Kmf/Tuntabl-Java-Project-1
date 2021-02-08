@@ -14,7 +14,4 @@ public class NaughtyStudent extends Student {
         return actualGrade + (actualGrade * (10/100));
     }
 
-    public double getAverageGrade(Boolean actual) {
-        return super.getAverageGrade();
-    }
 }

@@ -2,12 +2,18 @@ package io.turntabl;
 
 import java.util.List;
 
-public class Student {
+public class Student implements Nameable {
 
+    private String name;
     private List<Double> grades;
 
     //constructor
     public Student(List<Double> grades){
+        this.grades = grades;
+    }
+
+    public Student(String name, List<Double> grades){
+        this.name = name;
         this.grades = grades;
     }
 
@@ -27,6 +33,12 @@ public class Student {
         return sum/grades.size();
     }
 
+    public double getAverageGrade(Boolean actual) {
+        return this.getAverageGrade();
+    }
 
-
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }

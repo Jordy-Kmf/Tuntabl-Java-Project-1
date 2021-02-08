@@ -25,8 +25,8 @@ public class NaughtyStudentTest {
     @Test
     public void checkReportedAverageGrade() {
 //
-    assertEquals(((10/100)*jordan.getAverageGrade(true))+jordan.getAverageGrade(true), jordan.getAverageGrade(), 1.0);
-
+        assertEquals(((10/100)*jordan.getAverageGrade(true))+jordan.getAverageGrade(true), jordan.getAverageGrade(), 1.0);
+//        assertEquals(85.43, jordan.getAverageGrade(), 85.5); // Almost working solution by Godson
     }
 
     @Test
@@ -37,6 +37,5 @@ public class NaughtyStudentTest {
         assertEquals(((10/100)*jordan.getAverageGrade(true))+jordan.getAverageGrade(true), jordan.getAverageGrade(), 1.0);
         assertEquals(((10/100)*godson.getAverageGrade(true))+godson.getAverageGrade(true), godson.getAverageGrade(), 1.0);
         assertEquals(((10/100)*kelvin.getAverageGrade(true))+kelvin.getAverageGrade(true), kelvin.getAverageGrade(), 1.0);
-
     }
 }
